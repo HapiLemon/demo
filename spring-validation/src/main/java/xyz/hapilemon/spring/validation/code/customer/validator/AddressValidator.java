@@ -1,9 +1,9 @@
 package xyz.hapilemon.spring.validation.code.customer.validator;
 
-import io.ftlexpress.validate.code.customer.pojo.Address;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
+import xyz.hapilemon.spring.validation.code.customer.pojo.Address;
 
 public class AddressValidator implements Validator {
     @Override

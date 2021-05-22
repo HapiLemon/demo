@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sample" class="xyz.hapilemon.spring.databinding.part3.DependOnExoticType">
+        <property name="type" value="aNameForExoticType"/>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="xyz.hapilemon.spring.databinding.part3.ExoticType"
+                       value="xyz.hapilemon.spring.databinding.part3.ExoticTypeBinder"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

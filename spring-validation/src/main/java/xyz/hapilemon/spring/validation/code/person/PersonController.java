@@ -1,7 +1,5 @@
 package xyz.hapilemon.spring.validation.code.person;
 
-import io.ftlexpress.validate.code.person.pojo.Person;
-import io.ftlexpress.validate.code.person.validator.PersonValidator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.DataBinder;
@@ -9,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import xyz.hapilemon.spring.validation.code.person.pojo.Person;
+import xyz.hapilemon.spring.validation.code.person.validator.PersonValidator;
 
 @Slf4j
 @RestController

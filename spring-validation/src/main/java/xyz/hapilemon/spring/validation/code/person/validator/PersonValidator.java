@@ -1,9 +1,9 @@
 package xyz.hapilemon.spring.validation.code.person.validator;
 
-import io.ftlexpress.validate.code.person.pojo.Person;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
+import xyz.hapilemon.spring.validation.code.person.pojo.Person;
 
 public class PersonValidator implements Validator {
 

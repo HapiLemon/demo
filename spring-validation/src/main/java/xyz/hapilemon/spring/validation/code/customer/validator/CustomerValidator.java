@@ -1,10 +1,10 @@
 package xyz.hapilemon.spring.validation.code.customer.validator;
 
-import io.ftlexpress.validate.code.customer.pojo.Address;
-import io.ftlexpress.validate.code.customer.pojo.Customer;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
+import xyz.hapilemon.spring.validation.code.customer.pojo.Address;
+import xyz.hapilemon.spring.validation.code.customer.pojo.Customer;
 
 public class CustomerValidator implements Validator {
     private final Validator addressValidator;

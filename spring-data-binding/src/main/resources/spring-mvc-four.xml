@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sample" class="xyz.hapilemon.spring.databinding.part4.DependOnExoticType">
+        <property name="type" value="aNameForExoticType"/>
+    </bean>
+
+    <bean id="customPropertyEditorRegistrar"
+          class="xyz.hapilemon.spring.databinding.part4.CustomPropertyEditorRegistrar"/>
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="propertyEditorRegistrars">
+            <list>
+                <ref bean="customPropertyEditorRegistrar"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>
