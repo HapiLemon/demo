@@ -1,0 +1,9 @@
+server:
+  port: ${port}
+j2cache:
+  config-location: classpath:j2cache.properties
+  # 开启对spring的支持
+  open-spring-cache: true
+  # 不允许缓存空值
+  allow-null-value: false
+  cache-clean-mode: passive
